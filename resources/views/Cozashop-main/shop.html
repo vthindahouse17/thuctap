@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/product.css">
+  <link rel="stylesheet" href="src/css/shop.css" />
+ 
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="icon" href="https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/295374195_781580993040406_229230968445196371_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=k_Xu60nDFkwAX8LIGg9&tn=eWdFGZdlTg1QYgfP&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-uoE0xxAPsPu7H0wV1e6MFTCbtb0zrqnelN6fuvutywQ&oe=63303C90">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://fonts.adobe.com/fonts/poppins#details-section+poppins-thin"> -->
+  <link rel="stylesheet" href="https://www.dafontfree.net/playfair-display-bold/f59120.html">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Shop</title>
+</head>
+
+<body>
+  <!-- Dựng base -->
+
+  <div id="app">
+
+
+
+
+
+    <div id="header">
+
+      <div class="header-top">
+        <div class="sub-header-top">
+          <div class="left-title">
+            <h4>Website designed by Manh Cuong</h4>
+          </div>
+          <div class="list-header">
+            <ul>
+              <li><a href=""> Help & FAQs</a></li>
+              <li><a href=""> My Account</a></li>
+              <li><a href=""> EN</a></li>
+              <li><a href=""> USD</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sub-nav" id="nav">
+
+        <div class="nav">
+
+
+          <div class="photo-logo">
+              <a href="index.html"><img src="src/img/logo.webp" style="cursor: pointer;" alt="" /></a>
+          </div>
+          <div class="list-menu">
+              <ul>
+                  <li>
+                      <a href="index.html" id="home"> Home
+                          <ul class="sub-menu">
+                              <li><a href="">Homepage 1</a></li>
+                              <li><a href="">Homepage 1</a></li>
+                              <li><a href="">Homepage 1</a></li>
+                          </ul>
+                      </a>
+                  </li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="list-icon" id="list-icon">
+              <div class="icons search" id="iconSearch">
+
+                  <input type="text" id="input_search" placeholder="New Product..?">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="icons cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="icons heart">
+                  <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="toggle">
+                  <i class='bx bx-sun'></i>
+              </div>
+          </div>
+
+
+
+      </div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+   
+
+    <div id="main">
+
+
+       
+      <div class="product">
+        
+        <div class="text-product">
+          <div class="menu-filter-product">
+            <div class="menu-product">
+              <ul>
+                <li><a href="">All Products</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Bag</a></li>
+                <li><a href="">Shoes</a> </li>
+                <li><a href="">Watches</a></li>
+              </ul>
+            </div>
+            <div class="filter-product">
+              <div class="filter">
+                <i class='bx bx-filter'></i> <span>Filter</span>
+              </div>
+              <div class="search-filter-product">
+                <i class='bx bx-search-alt-2'></i><span>Search</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="style"></div>
+
+        <div class="image-product">
+
+          <div class="item-image-product" data-aos="fade-up">
+            <div class="test">
+              <img src="src/img/product-1.webp" width="100%" alt="">
+            </div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+                
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="fade-down">
+            <div class="test"><img src="src/img/product-2.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+                
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-image-product" data-aos="fade-right">
+            <div class="test"><img src="src/img/product-3.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="fade-left">
+            <div class="test"><img src="src/img/product-4.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-image-product" data-aos="fade-up-right">
+            <div class="test"><img src="src/img/product-5.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="fade-up-left">
+            <div class="test"><img src="src/img/product-6.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-image-product" data-aos="fade-down-left">
+            <div class="test"><img src="src/img/product-7.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="zoom-in">
+            <div class="test"><img src="src/img/product-8.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="zoom-in-up">
+            <div class="test"><img src="src/img/product-9.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="zoom-in-down">
+            <div class="test"><img src="src/img/product-10.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-image-product" data-aos="zoom-in-left">
+            <div class="test"><img src="src/img/product-11.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="zoom-in-right">
+            <div class="test"><img src="src/img/product-12.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="item-image-product" data-aos="zoom-in-right">
+            <div class="test"><img src="src/img/product-13.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product" data-aos="zoom-in-right">
+            <div class="test"><img src="src/img/product-14.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item-image-product" data-aos="zoom-in-right">
+            <div class="test"><img src="src/img/product-15.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+               
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-image-product"data-aos="zoom-in-right">
+            <div class="test"><img src="src/img/product-16.webp" width="100%" alt=""></div>
+            <p><a onclick="showProduct()" >Quick View</a></p>
+            <div class="name-item-image-product">
+              <div class="price-name-item-image-product">
+                <p>Esprit Ruffle Shirt</p>
+                <p>$16.64</p>
+              </div>
+              <div class="heart-name-item-image-product">
+                <i id="bxs" onclick="addHeart()"  class='bx bxs-heart'></i>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="btn-product" data-aos="zoom-in-right">
+          <a href="">LOAD MORE</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="footer">
+      <div class="text-footer">
+        <div class="cate">
+          <h3>CATEGORIES</h3>
+          <p><a href="">Women</a></p>
+          <p><a href="">Men</a></p>
+          <p><a href="">Shoes</a></p>
+          <p><a href="">Watches</a></p>
+        </div>
+        <div class="help">
+          <h3>HELP</h3>
+          <p><a href="">Track Order</a></p>
+          <p><a href="">Returns</a></p>
+          <p><a href="">Shipping</a></p>
+          <p><a href="">FAQs</a></p>
+        </div>
+        <div class="touch">
+          <h3>GET IN TOUCH</h3>
+          <p>Any questions? Let us know in store at 8th floor,Vu Binh, Kien Xuong,Thai Binh, NY 10018 or call us on
+            (+84) 968 68 68 68</p>
+          <p>
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+          </p>
+        </div>
+        <div class="mail">
+          <h3>NEWSLETTER</h3>
+
+          <div class="input-mail">
+
+            <input type="email" placeholder="email@example.com">
+            <span></span>
+          </div>
+
+          <p><a href="">SUBSCRIBE</a></p>
+
+        </div>
+      </div>
+
+
+
+      <div class="local-footer">
+        <div class="image-logo-footer">
+          <img src="src/img/ft1.webp" alt="">
+          <img src="src/img/ft2.webp" alt="">
+          <img src="src/img/ft3.webp" alt="">
+          <img src="src/img/ft4.webp" alt="">
+          <img src="src/img/ft5.webp" alt="">
+        </div>
+        <div class="text-local-footer">
+          <p>Copyright ©2022 All rights reserved | This template is made with <i class='bx bx-heart'></i> by <span
+              style="color: #007bff;cursor: pointer;">Cường đẹp trai vkl</span></p>
+        </div>
+      </div>
+
+      <div class="back-footer">
+        <a href="#"><i class='bx bx-arrow-to-top bx-fade-up'></i></a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div id="appp" >
+
+    <div class="grid">
+        <div class="grid-left">
+            <img src="src/img/product_Sub1.webp" width="80%" alt="">
+            <img src="src/img/product_Sub2.webp" width="80%" alt="">
+            <img src="src/img/product_Sub3.webp" width="80%" alt="">
+        </div>
+        <div class="grid-mid">
+
+
+            <div class="img">
+                <img id="img" src="src/img/product_Sub2.webp" width="100%" alt="">
+            </div>
+
+
+            <div class="icon-next-pre">
+
+                <i class='bx bx-exit-fullscreen'></i>
+
+                <div class="next-pre">
+                    <i class='bx bx-chevron-left' onclick="pre()"></i>
+                    <i class='bx bx-chevron-right' onclick="next()"></i>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="grid-right">
+            <p>Lightweight Jacket</p>
+            <h4>$58.79</h4>
+            <p>Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligu
+                la. Mauris consequat ornare feugiat.</p>
+
+
+            <div class="option-product">
+                <form action="" onsubmit=" return validate()">
+                    <table>
+                        <tr>
+                            <td>
+                                Size
+                            </td>
+                            <td>
+                                <select id="size">
+                                    <option value="0">Choose an option</option>
+                                    <option value="1">Size S</option>
+                                    <option value="2">Size M</option>
+                                    <option value="3">Size L</option>
+                                    <option value="4">Size XL</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>
+                                <select id="color">
+                                    <option value="0">Choose an option</option>
+                                    <option value="1">Red</option>
+                                    <option value="2">Blue</option>
+                                    <option value="3">White</option>
+                                    <option value="4">Gray</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button>-</button>
+                                <input type="number" min="0">
+                                <button>+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" name="" value="ADD TO CART" id="a">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+
+
+            <div class="icon-product">
+                <i class='bx bxs-heart'></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-google-plus'></i>
+            </div>
+            <div class="close">
+                <i onclick="showProduct()"  class='bx bx-x-circle bx-tada'></i>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+  <script src="src/js/shop.js"></script>
+  <script src="src/js/product.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
